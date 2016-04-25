@@ -1,0 +1,39 @@
+Ritika gives NN strings to Semona and asks her to perform a consonant reversal on each string SS such that the indexed positions of its vowels (aa, ee , ii, oo, and uu) are unchanged but all the consonants are reversed. This means that each vowel must be at the same exact index before and after the reversal. Because the value of NN is very large, Semona wants your help accomplishing this with code!
+
+Given NN strings, reverse and print each string such that the positions of its vowels remain unchanged but all its consonants are reversed.
+
+Input Format
+
+The first line contains an integer, NN, the number of strings.
+Each of the NN subsequent lines contains a string, SS, to be reversed.
+
+Constraints
+
+    1≤N≤10001≤N≤1000
+    1≤|Si|≤20001≤|Si|≤2000, where 0≤i<N0≤i<N
+    Each string contains lowercase letters.
+
+Output Format
+
+For each string SS received as input, print the consonant reversal of SS on a new line.
+
+Sample Input
+
+2
+abcde
+eabafgs
+
+Sample Output
+
+adcbe
+easagfb
+
+Explanation
+
+N=2N=2
+
+S0="abcde"S0="abcde"
+This string has 22 vowels that must stay in place: the aa at index 00 and the ee at index 44. We reverse only the consonants (leaving the vowels in place), and print the result (adcbeadcbe) on a new line.
+
+S1="eabafgs"S1="eabafgs"
+This string has 33 vowels that must stay in place (at indices 00, 11, and 33). We reverse only the consonants (leaving the vowels in place), and print the result (easagfbeasagfb) on a new line.

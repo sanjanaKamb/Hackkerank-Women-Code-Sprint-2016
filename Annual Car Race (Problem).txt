@@ -1,0 +1,65 @@
+Naruto is participating in Hidden Leaf village's Annual Car Race. There are NN connected dragstrips in the village.
+
+Each participant would be given the IDs of the source stop, SS, the destination stop, DD, and a map of bidirectional (undirected) roads connecting different stops in Hidden leaf village. Generally speaking, most participants use shortest-distance paths to reach the destination; because of this, there is traffic included in these paths which slows down the participants.
+
+Naruto won the race last year by using one of the second shortest-distance paths to reach the destination; however, he can't use the same trick again this year as 50%50% of the participants are also planning to use the second shortest-distance path during the race.
+
+Naruto realizes that the only way to win the contest is to use one of the third shortest-distance paths. Help him find the total distance he must travel to reach the destination using one of the third shortest-distance paths; if no such third shortest-distance path exists, print -1-1.
+
+Note:
+
+    If a road belongs to any one of the 1st1st shortest paths, that road mustn't be a part of 2nd2nd or 3rd3rd shortest path.
+
+    If a road belongs to any one of the 2nd2nd shortest paths, that road also mustn't be a part of the 3rd3rd shortest path.
+
+Input Format
+
+The first line contains a single integer, TT, denoting the number of test cases.
+The second line contains 22 space-separated integers, NN (the number of stops) and MM (the number of roads between stops), respectively.
+The third line contains 22 space-separated integers, SS (the source, or starting point) and DD (the destination, or finish point), respectively. The MM subsequent lines each contain 33 space-separated integers: uu, vv, and distdist, where distdist denotes the distance between stop uu and stop vv.
+
+Note: All stops are connected by undirected roads.
+
+Constraints
+
+    1≤T≤101≤T≤10
+    5≤N≤5005≤N≤500
+    N≤M≤N×(N−1)2N≤M≤N×(N−1)2
+    0≤S<N0≤S<N
+    0≤D<N0≤D<N
+    1≤dist≤500001≤dist≤50000
+
+Output Format
+
+Print the total distance Naruto must travel to reach the finish line if he chooses to use one of the third shortest-distance paths; if there is no third shortest-distance path, print -1-1.
+
+Sample Input
+
+1
+7 9
+0 6
+0 1 1
+0 2 1
+0 3 2
+0 4 3
+1 5 2
+2 6 4
+3 6 2
+4 6 4
+5 6 1
+
+Sample Output
+
+7
+
+Explanation
+
+[annual car race final.png]
+
+* The source and destination are highlighted yellowyellow.
+
+The shortest distance is 44, via the following paths: 0→1→5→60→1→5→6 and 0→3→60→3→6, highlighted in blue.
+
+The second-shortest distance is 55 and the path is 0→2→60→2→6, highlighted in green.
+
+The third-shortest distance is 77 and the path is 0→4→60→4→6, highlighted in orange.
